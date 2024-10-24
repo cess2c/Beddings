@@ -3,13 +3,13 @@
    <head>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <link rel="stylesheet" href="./styles/styles.css">
+      <link rel="stylesheet" href="./src/styles/styles.css">
       <script src="https://cdn.tailwindcss.com"></script>
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
       <title>Beddings Online Shop | Home Page</title>
    </head>
    <body>
-      <div class="relative w-full h-screen bg-cover bg-no-repeat bg-center" style="background-image: url('images/hero-image-1.jpg')">
+      <div class="relative w-full h-screen bg-cover bg-no-repeat bg-center" style="background-image: url('./src/images/hero-image-1.jpg')">
          <!-- Overlay -->
          <section class="absolute inset-0 bg-black bg-opacity-40"></section>
          <header class="py-2 shadow-sm bg-transparent z-10 relative">
@@ -17,7 +17,7 @@
                <!-- Logo -->
                <section class="flex items-center">
                   <a class="flex items-center space-x-20" href="#">
-                     <img src="./images/Bedding-Logo.png" alt="Logo" class="w-16">
+                     <img src="./src/images/Bedding-Logo.png" alt="Logo" class="w-16">
                      <span class="text-white h-12 text-3xl px-1 py-2 hover:text-primary" style="font-family: 'Dancing Script', cursive;"></span>
                   </a>
                </section>
@@ -80,7 +80,7 @@
             <h2 class="text-3xl font-medium text-center py-5">Our Features</h2>
             <div class="w-10/12 grid grid-cols-3 gap-6 mx-auto justify-center py-5">
                <div class="bg-primary rounded-lg px-3 py-6 flex justify-center gap-5 shadow-dark-custom transition-transform transform hover:scale-105 hover:shadow-dark-custom">
-                  <img src="./images/price.svg" class="w-12 h-12 object-cover">
+                  <img src="./src/images/price.svg" class="w-12 h-12 object-cover">
                   <div>
                      <h2 class="font-medium capitalize text-lg italic text-white">
                         Price Friendly
@@ -91,7 +91,7 @@
                   </div>
                </div>
                <div class="bg-primary rounded-lg px-3 py-6 flex justify-center gap-5 shadow-dark-custom transition-transform transform hover:scale-105 hover:shadow-dark-custom">
-                  <img src="./images/comfort.svg" class="w-12 h-12 object-cover">
+                  <img src="./src/images/comfort.svg" class="w-12 h-12 object-cover">
                   <div>
                      <h2 class="font-medium capitalize text-lg italic text-white">
                         Comfort and Style
@@ -102,7 +102,7 @@
                   </div>
                </div>
                <div class="bg-primary rounded-lg px-3 py-6 flex justify-center gap-5 shadow-dark-custom transition-transform transform hover:scale-105 hover:shadow-dark-custom">
-                  <img src="./images/customer.svg" class="w-12 h-12 object-cover">
+                  <img src="./src/images/customer.svg" class="w-12 h-12 object-cover">
                   <div>
                      <h2 class="font-medium capitalize text-lg italic text-white">
                         Customer-Centric Service
@@ -115,7 +115,7 @@
                <br>
             </div>
 
-            <img src="./images/infographics1.jpg" alt="" class="pt-20">
+            <img src="./src/images/infographics1.jpg" alt="" class="pt-20">
 
             <div id="default-carousel" class="relative w-full" data-carousel="slide">
                <h2 class="text-3xl font-medium text-center py-5">Our Featured Products</h2>
@@ -124,21 +124,21 @@
                   <!-- Item 1 -->
                   <div class="hidden duration-700 ease-in-out" data-carousel-item>
                      <video class="w-full h-full object-cover" autoplay loop muted>
-                        <source src="./videos/productVid.mp4" type="video/mp4">
+                        <source src="./src/videos/productVid.mp4" type="video/mp4">
                         Your browser does not support the video tag.
                      </video>
                   </div>
                   <!-- Item 2 -->
                   <div class="hidden duration-700 ease-in-out" data-carousel-item>
                      <video class="w-full h-full object-cover" autoplay loop muted>
-                        <source src="./videos/prodVid2.mp4" type="video/mp4">
+                        <source src="./src/videos/prodVid2.mp4" type="video/mp4">
                         Your browser does not support the video tag.
                      </video>
                   </div>
                   <!-- Item 3 -->
                   <div class="hidden duration-700 ease-in-out" data-carousel-item>
                      <video class="w-full h-full object-cover" autoplay loop muted>
-                        <source src="./videos/prodVid2.mp4" type="video/mp4">
+                        <source src="./src/videos/prodVid2.mp4" type="video/mp4">
                         Your browser does not support the video tag.
                      </video>
                   </div>
@@ -192,7 +192,7 @@
             </div>
          </div>
       </div>
-      <script src="./scripts/script.js" defer></script>
+      <script src="./src/app/script.js" defer></script>
       <script src="https://unpkg.com/flowbite@1.4.7/dist/flowbite.js"></script>
 
    </body>

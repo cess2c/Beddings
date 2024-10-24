@@ -3,7 +3,7 @@
    <head>
       <meta charset="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <link rel="stylesheet" href="./styles/styles.css" />
+      <link rel="stylesheet" href="./src/styles/styles.css" />
       <script src="https://cdn.tailwindcss.com"></script>
       <link
          rel="stylesheet"
@@ -21,7 +21,7 @@
                <!-- Logo -->
                <section class="flex items-center">
                   <a class="flex items-center space-x-20" href="#">
-                  <img src="./images/Bedding-Logo.png" alt="Logo" class="w-16">
+                  <img src="./src/images/Bedding-Logo.png" alt="Logo" class="w-16">
                   <span class="text-white h-12 text-3xl px-1 py-2 hover:text-black" style="font-family: 'Dancing Script', cursive;"></span>
                   </a>
                </section>
@@ -186,8 +186,9 @@
             </div>
         </div>
         <!-- sidebar end -->
-        <!-- products -->
-        <div class="col-span-3">
+
+        <!-- content container -->
+        <div class="col-span-3" >
             <!-- Sorting -->
             <div class="flex items-center mb-4">
                 <select class="w-44 text-sm text-gray-600 px-4 py-3 border-gray-300 shadow-sm rounded focus:ring-primary focus:border-primary" id="sort-select">
@@ -197,257 +198,30 @@
                 </select>
             </div>
             <!-- Sorting end-->
-            <!-- Product Grid-->
-            <div class="grid grid-cols-3 gap-6">
-                <!-- Product 1 -->
-                <div class="bg-white shadow rounded overflow-hidden group" data-size="single" data-color="beige" data-category="sheets" data-price="260.00" id="product">
-                <div class="relative">
-                    <img src="images/prod1.jpg" class="w-full" />
-                    <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center gap-2 opacity-0 group-hover:opacity-100 transition">
-                        <a href="#" class="text-white text-lg w-9 h-8 rounded-full bg-primary flex items-center justify-center hover:bg-gray-800 transition">
-                        <i class="fas fa-search"></i>
-                        </a>
-                        <a href="#" class="text-white text-lg w-9 h-8 rounded-full bg-primary flex items-center justify-center hover:bg-gray-800 transition">
-                        <i class="fas fa-heart"></i>
-                        </a>
-                    </div>
-                </div>
-                <div class="pt-4 pb-3 px-4">
-                    <a href="#">
-                        <h4 class="uppercase font-medium text-xl mb-2 text-gray-800 hover:text-primary transition product-name">Bedding Set Butterfly</h4>
-                    </a>
-                    <div class="flex items-baseline mb-1 space-x-2">
-                        <p class="text-xl text-primary font-semibold">₱260.00</p>
-                        <p class="text-sm text-gray-400 line-through">₱280.00</p>
-                    </div>
-                    <div class="product" id="product-1">
-                        <div class="rating">
-                            <span class="fa fa-bed selected" data-value="1"></span>
-                            <span class="fa fa-bed selected" data-value="2"></span>
-                            <span class="fa fa-bed selected" data-value="3"></span>
-                            <span class="fa fa-bed selected" data-value="4"></span>
-                            <span class="fa fa-bed" data-value="5"></span>
-                        </div>
-                    </div>
-                </div>
-                <a
-                    href="#"
-                    class="add-to-cart block w-full py-1 text-center text-white bg-primary border border-primary rounded-b hover:bg-secondary transition shadow-dark-custom hover:scale-105"
-                    data-product-id="1"
-                    data-product-name="Bedding Set Butterfly"
-                    data-product-price="260.00"
-                    >
-                Add to cart
-                </a>
-                </div>
-                <!-- Product 2 -->
-                <div class="bg-white shadow rounded overflow-hidden group" data-size="single" data-color="pink" data-category="sheets" data-price="275.00" id="product">
-                <div class="relative">
-                    <img src="images/prod2.jpg" class="w-full" />
-                    <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center gap-2 opacity-0 group-hover:opacity-100 transition">
-                        <a href="#" class="text-white text-lg w-9 h-8 rounded-full bg-primary flex items-center justify-center hover:bg-gray-800 transition">
-                        <i class="fas fa-search"></i>
-                        </a>
-                        <a href="#" class="text-white text-lg w-9 h-8 rounded-full bg-primary flex items-center justify-center hover:bg-gray-800 transition">
-                        <i class="fas fa-heart"></i>
-                        </a>
-                    </div>
-                </div>
-                <div class="pt-4 pb-3 px-4">
-                    <a href="#">
-                        <h4 class="uppercase font-medium text-xl mb-2 text-gray-800 hover:text-primary transition product-name">Bedding Set Flowers</h4>
-                    </a>
-                    <div class="flex items-baseline mb-1 space-x-2">
-                        <p class="text-xl text-primary font-semibold">₱275.00</p>
-                        <p class="text-sm text-gray-400 line-through">₱290.00</p>
-                    </div>
-                    <div class="product" id="product-2">
-                        <div class="rating">
-                            <span class="fa fa-bed selected" data-value="1"></span>
-                            <span class="fa fa-bed selected" data-value="2"></span>
-                            <span class="fa fa-bed selected" data-value="3"></span>
-                            <span class="fa fa-bed selected" data-value="4"></span>
-                            <span class="fa fa-bed" data-value="5"></span>
-                        </div>
-                    </div>
-                </div>
-                <a
-                    href="#"
-                    class="add-to-cart block w-full py-1 text-center text-white bg-primary border border-primary rounded-b hover:bg-secondary transition shadow-dark-custom hover:scale-105"
-                    data-product-id="2"
-                    data-product-name="Bedding Set Flowers"
-                    data-product-price="275.00"
-                    >
-                Add to cart
-                </a>
-                </div>
-                <!-- Product 3 -->
-                <div class="bg-white shadow rounded overflow-hidden group" data-size="single" data-color="green" data-category="sheets" data-price="250.00" id="product">
-                <div class="relative">
-                    <img src="images/prod5.jpg" class="w-full" />
-                    <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center gap-2 opacity-0 group-hover:opacity-100 transition">
-                        <a href="#" class="text-white text-lg w-9 h-8 rounded-full bg-primary flex items-center justify-center hover:bg-gray-800 transition">
-                        <i class="fas fa-search"></i>
-                        </a>
-                        <a href="#" class="text-white text-lg w-9 h-8 rounded-full bg-primary flex items-center justify-center hover:bg-gray-800 transition">
-                        <i class="fas fa-heart"></i>
-                        </a>
-                    </div>
-                </div>
-                <div class="pt-4 pb-3 px-4">
-                    <a href="#">
-                        <h4 class="uppercase font-medium text-xl mb-2 text-gray-800 hover:text-primary transition product-name">Bedding Leaves</h4>
-                    </a>
-                    <div class="flex items-baseline mb-1 space-x-2">
-                        <p class="text-xl text-primary font-semibold">₱250.00</p>
-                        <p class="text-sm text-gray-400 line-through">₱260.00</p>
-                    </div>
-                    <div class="product" id="product-3">
-                        <div class="rating">
-                            <span class="fa fa-bed selected" data-value="1"></span>
-                            <span class="fa fa-bed selected" data-value="2"></span>
-                            <span class="fa fa-bed selected" data-value="3"></span>
-                            <span class="fa fa-bed" data-value="4"></span>
-                            <span class="fa fa-bed" data-value="5"></span>
-                        </div>
-                    </div>
-                </div>
-                <a
-                    href="#"
-                    class="add-to-cart block w-full py-1 text-center text-white bg-primary border border-primary rounded-b hover:bg-secondary transition shadow-dark-custom hover:scale-105"
-                    data-product-id="5"
-                    data-product-name="Bedding Leaves"
-                    data-product-price="250.00"
-                    >
-                Add to cart
-                </a>
-                </div>
-                <!-- Product 4 -->
-                <div class="bg-white shadow rounded overflow-hidden group" data-product data-size="single" data-color="darkblue" data-category="sheets" data-price="250.00" id="product">
-                <div class="relative">
-                    <img src="images/prod7.jpg" class="w-full" />
-                    <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center gap-2 opacity-0 group-hover:opacity-100 transition">
-                        <a href="#" class="text-white text-lg w-9 h-8 rounded-full bg-primary flex items-center justify-center hover:bg-gray-800 transition">
-                        <i class="fas fa-search"></i>
-                        </a>
-                        <a href="#" class="text-white text-lg w-9 h-8 rounded-full bg-primary flex items-center justify-center hover:bg-gray-800 transition">
-                        <i class="fas fa-heart"></i>
-                        </a>
-                    </div>
-                </div>
-                <div class="pt-4 pb-3 px-4">
-                    <a href="#">
-                        <h4 class="uppercase font-medium text-xl mb-2 text-gray-800 hover:text-primary transition product-name">Bedding Starry Night</h4>
-                    </a>
-                    <div class="flex items-baseline mb-1 space-x-2">
-                        <p class="text-xl text-primary font-semibold">₱250.00</p>
-                        <p class="text-sm text-gray-400 line-through">₱270.00</p>
-                    </div>
-                    <div class="product" id="product-4">
-                        <div class="rating">
-                            <span class="fa fa-bed selected" data-value="1"></span>
-                            <span class="fa fa-bed selected" data-value="2"></span>
-                            <span class="fa fa-bed selected" data-value="3"></span>
-                            <span class="fa fa-bed selected" data-value="4"></span>
-                            <span class="fa fa-bed selected" data-value="5"></span>
-                        </div>
-                    </div>
-                </div>
-                <a
-                    href="#"
-                    class="add-to-cart block w-full py-1 text-center text-white bg-primary border border-primary rounded-b hover:bg-secondary transition shadow-dark-custom hover:scale-105"
-                    data-product-id="7"
-                    data-product-name="Bedding Starry Night"
-                    data-product-price="250.00"
-                    >
-                Add to cart
-                </a>
-                </div>
-                <!-- Product 5 -->
-                <div class="bg-white shadow rounded overflow-hidden group" data-product data-size="queen" data-color="blue" data-category="sheets" data-price="280.00" id="product">
-                <div class="relative">
-                    <img src="images/prod9.jpg" class="w-full" />
-                    <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center gap-2 opacity-0 group-hover:opacity-100 transition">
-                        <a href="#" class="text-white text-lg w-9 h-8 rounded-full bg-primary flex items-center justify-center hover:bg-gray-800 transition">
-                        <i class="fas fa-search"></i>
-                        </a>
-                        <a href="#" class="text-white text-lg w-9 h-8 rounded-full bg-primary flex items-center justify-center hover:bg-gray-800 transition">
-                        <i class="fas fa-heart"></i>
-                        </a>
-                    </div>
-                </div>
-                <div class="pt-4 pb-3 px-4">
-                    <a href="#">
-                        <h4 class="uppercase font-medium text-xl mb-2 text-gray-800 hover:text-primary transition product-name">Bedding One Piece</h4>
-                    </a>
-                    <div class="flex items-baseline mb-1 space-x-2">
-                        <p class="text-xl text-primary font-semibold">₱280.00</p>
-                        <p class="text-sm text-gray-400 line-through">₱290.00</p>
-                    </div>
-                    <div class="product" id="product-5">
-                        <div class="rating">
-                            <span class="fa fa-bed selected" data-value="1"></span>
-                            <span class="fa fa-bed selected" data-value="2"></span>
-                            <span class="fa fa-bed selected" data-value="3"></span>
-                            <span class="fa fa-bed selected" data-value="4"></span>
-                            <span class="fa fa-bed" data-value="5"></span>
-                        </div>
-                    </div>
-                </div>
-                <a
-                    href="#"
-                    class="add-to-cart block w-full py-1 text-center text-white bg-primary border border-primary rounded-b hover:bg-secondary transition shadow-dark-custom hover:scale-105"
-                    data-product-id="9"
-                    data-product-name="Bedding One Piece"
-                    data-product-price="280.00"
-                    >
-                Add to cart
-                </a>
-                </div>
-                <!-- Product 6 -->
-                <div class="bg-white shadow rounded overflow-hidden group" data-size="king" data-color="white" data-category="sheets" data-price="250.00" id="product">
-                    <div class="relative">
-                        <img src="images/prod8.jpg" class="w-full" />
-                        <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center gap-2 opacity-0 group-hover:opacity-100 transition">
-                            <a href="#" class="text-white text-lg w-9 h-8 rounded-full bg-primary flex items-center justify-center hover:bg-gray-800 transition">
-                            <i class="fas fa-search"></i>
-                            </a>
-                            <a href="#" class="text-white text-lg w-9 h-8 rounded-full bg-primary flex items-center justify-center hover:bg-gray-800 transition">
-                            <i class="fas fa-heart"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="pt-4 pb-3 px-4">
-                        <a href="#">
-                            <h4 class="uppercase font-medium text-xl mb-2 text-gray-800 hover:text-primary transition product-name">Bedding Doodle</h4>
-                        </a>
-                        <div class="flex items-baseline mb-1 space-x-2">
-                            <p class="text-xl text-primary font-semibold">₱250.00</p>
-                            <p class="text-sm text-gray-400 line-through">₱260.00</p>
-                            
-                        </div>
-                        <div class="product" id="product-6">
-                            <div class="rating"> 
-                                <span class="fa fa-bed selected" data-value="1"></span>
-                                <span class="fa fa-bed selected" data-value="2"></span>
-                                <span class="fa fa-bed selected" data-value="3"></span>
-                                <span class="fa fa-bed selected" data-value="4"></span>
-                                <span class="fa fa-bed" data-value="5"></span>
+
+            <!-- Product container-->
+            <div class="grid grid-cols-3 gap-6" id="product_container" class="product_container">
+                <!-- product card -->
+                <template data-product-container>
+                    <div class="bg-white shadow rounded overflow-hidden group">
+                        <img src="" class="w-full" data-product-image/>
+                        <div class="pt-4 pb-3 px-4">
+                            <h4 class="uppercase font-medium text-xl mb-2 text-gray-800 hover:text-primary transition product-name" data-product-name>
+                            </h4>
+                            <p class="hidden" data-product-id data-product-color data-product-size  data-product-category></p>
+                            <div class="flex items-baseline mb-1 space-x-2">
+                                <p class="text-xl text-primary font-semibold" data-product-price>₱</p>
+                                <p class="text-sm text-gray-400 line-through" data-product-oprice>₱</p>
                             </div>
                         </div>
+                        <a href="#" class="add-to-cart block w-full py-1 text-center text-white bg-primary border border-primary rounded-b hover:bg-secondary transition shadow-dark-custom hover:scale-105">
+                            Add to cart
+                        </a>
                     </div>
-                    <a
-                        href="#"
-                        class="add-to-cart block w-full py-1 text-center text-white bg-primary border border-primary rounded-b hover:bg-secondary transition shadow-dark-custom hover:scale-105"
-                        data-product-id="8"
-                        data-product-name="Bedding Doodle"
-                        data-product-price="250.00"
-                        >
-                    Add to cart
-                    </a>
-                </div>
-                <!-- Product Grid End-->
+                </template>
+            </div>
 
+            <!-- Product Grid End-->
                 
                 <!-- Cart Modal -->
                 <div id="cartModal" class="fixed inset-0 p-4 flex flex-wrap justify-center items-center w-full h-full z-[1000] hidden">
@@ -467,9 +241,10 @@
                 </div>
             </div>
         </div>
-      <script src="./scripts/script.js" defer></script>
-      <script src="./scripts/filter.js"></script>
-      <script src="./scripts/rating.js"></script>
+      <script src="./app/script.js" defer></script>
+      <script type="module" src="./app/filter.js"></script>
+      <script src="./app/rating.js"></script>
+      <script src="./app/display.js"></script>
    </body>
    
 </html>

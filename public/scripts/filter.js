@@ -52,14 +52,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
             if (productNameElement) {
                 const productName = productNameElement.textContent.toLowerCase();
-                console.log('Checking product:', productName); 
                 
                 if (productName.includes(searchText)) {
                     product.style.display = ''; 
-                    console.log('Showing product:', productName); 
                 } else {
                     product.style.display = 'none'; 
-                    console.log('Hiding product:', productName);
                 }
             } else {
                 // If no .product-name element is found, do not hide the product
